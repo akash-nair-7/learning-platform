@@ -1,0 +1,411 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c0edf1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.company-name {
+    letter-spacing: 5px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.login-button ,.emailButton{
+    background-color: #af2db5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login-button:hover,.emailButton:hover {
+    background-color: #603472;
+}
+
+@media (max-width: 600px) {
+    .company-name {
+        display: none;  }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .login-button {
+        align-self: flex-end;
+    }
+}
+ /* Styling for the popup box */
+/* Styling for the popup button */
+.popup-button {
+    display: inline-block;
+    
+    padding: 10px 15px;
+    background-color: #af2db5;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.popup-button:hover{
+    background-color: #603472;
+}
+
+
+
+
+
+
+/* Offer Section */
+.offer-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    column-gap: 2rem;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+.offerHeading{
+    font-size: 25px;
+}
+.offerPercent{
+    font-size: 40px;
+}
+.offer-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Recommended Courses Section */
+.recommended-courses {
+    padding: 20px;
+    background-color: #c0edf1;
+    
+    
+}
+
+.course-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.course-item {
+    min-width: 220px;
+    width: 350px;
+    
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 0 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+    max-width: 100%;
+    height: 200px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .course-scroll {
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: auto;
+        max-height: 400px; /* Optional: Limit height to avoid too much scrolling */
+        align-items: center; /* Center the items */
+    }
+
+    .course-item {
+        min-width: 80%; /* Make the course items take up more space */
+    }
+    .offer-section {
+        height: 80vh;
+        padding: 60px;
+        grid-template-columns: 1fr;
+    }
+    .offer-image{
+        content: url('teacherUp.jpg');
+        height: 350px;
+        width: 350px;
+        justify-self: center;
+    }
+}
+
+
+/* Partners Section */
+.partners-section {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.partner-logo {
+    max-width: 100px;
+    height: 70px;
+    width: 120px;
+}
+
+/* Reviews Section */
+.reviews-section {
+    padding: 20px;
+    background-color: #c0edf1;
+    text-align: center;
+}
+
+.review {
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.rating{
+    color: #af2db5;
+}
+small{
+    color:#af2db5 ;
+}
+
+/* Plans Section */
+.plans-section {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.plan {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    background-color: #c0edf1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-item, .plan {
+        width: 80%;
+    }
+    
+    .partners-logos {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer {
+        position: relative;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .offerHeading{
+        margin-top: -100px;
+    }
+    .offerPercent{
+        font-size: 50px;
+    }
+    .offerTitle{
+        font-size: 30px;
+    }
+    .plans-section{
+        height: 80vh;
+    }
+    .course-image{
+        height: 200px;
+    }
+    .review-container{
+        display: flex; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    }
+    .review{
+        margin-right: 20px;
+    }
+}
+
+.plan {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 20px; 
+    width: 250px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s; 
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 1.5em; 
+    color: #af2db5; 
+    margin: 15px 0;
+}
+
+.plan ul {
+    list-style-type: none; 
+    padding: 0; 
+    text-align: center; 
+}
+
+.plan ul li {
+    
+    margin: 10px 0; 
+}
+
+.subscribe-btn {
+    background-color: #af2db5; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.subscribe-btn:hover {
+    background-color: #603472; 
+}
+
+
+@media (max-width: 768px) {
+    .plan {
+        width: 100%; 
+    }
+}
+
+
+
+
+.form-section {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: center; /* Center align items */
+    padding: 20px; /* Padding around the section */
+    background-color: #f9f9f9; /* Light background for contrast */
+    margin-bottom: 50px;
+}
+
+.form-container {
+    padding: 20px; /* Padding inside the form container */
+}
+
+.form-container h2 {
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input, textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button {
+    padding: 10px 15px; /* Padding inside button */
+    background-color: #af2db5; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: #603472; /* Darker blue on hover */
+}
+
+.image-container {
+    display: flex; /* Flex layout for image */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center vertically */
+}
+
+.form-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-section {
+        grid-template-columns: 1fr; /* Stack columns on small screens */
+    }
+
+}
+
+.form-image{
+    width:270px
+}
+
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #af2db5;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none; /* Remove underline from anchor tag */
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #603472; /* Darker blue on hover */
+}
