@@ -1,0 +1,188 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+body{
+    font-family: 'Space Grotesk', sans-serif;;
+    height: 100%;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+}
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.company-name {
+    letter-spacing: 5px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.login-button ,.emailButton{
+    background-color: #af2db5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login-button:hover,.emailButton:hover {
+    background-color: #603472;
+}
+
+
+
+.popup-button {
+    display: inline-block;
+    z-index: 10;
+    padding: 10px 15px;
+    background-color: #af2db5;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.popup-button:hover{
+    background-color: #603472;
+}
+
+
+
+
+
+
+.home {
+    
+    background-color: #c0edf1;
+    padding: 2.0rem 0 2rem;
+    height: 100vh;
+    display: grid;
+  }
+.homeContainer {
+    display: grid;
+    align-content: center;
+    row-gap: 0.5rem;
+   
+  }
+  .homeTitle {
+    
+    font-size:3.6rem;
+    margin: .75rem 0;
+  }
+  .homeDescription{
+    color: #af2db5;
+    font-size: 1.5rem;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  .homeData {
+    text-align: center;
+
+  }
+  input {
+    background-color: rgba(0, 0, 0, 0.6); /* White background with 0.8 opacity */
+    border: 1px solid #b02cb5;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #ffffff;
+    
+}
+input::placeholder {
+    color: white;
+}
+  
+.homeImg {
+    
+    justify-self: center;
+    animation: floaty 1.8s infinite alternate;
+  }
+  img{
+    width: 240px;
+  }
+.homeShadow {
+    width: 130px;
+    height: 24px;
+    background-color: hsla(38, 22%, 7%, 0.3);
+    margin: 0 0 0 50px;
+    border-radius: 50%;
+    filter: blur(7px);
+    animation: shadow 1.8s infinite alternate;
+  }
+  .homeFooter {
+    display: flex;
+    justify-content: center;
+    column-gap: .5rem;
+    align-self: flex-end;
+    
+  }
+  @media screen and (min-width: 1024px) {
+    .homeContainer {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      column-gap: 2rem;
+      margin-top: -200px;
+    }
+    .homeData {
+      text-align: initial;
+      margin-left: 20%;
+    }
+    input{
+        width: 300px;
+    }
+    .homeImg img {
+      width: 300px;
+    }
+    .homeShadow {
+      width: 150px;
+      height: 40px;
+      margin: 0 0 0 77px;
+    }
+  }
+  @keyframes floaty {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(15px);
+    }
+  }
+  
+  @keyframes shadow {
+    0% {
+      transform: scale(1, 1);
+    }
+    100% {
+      transform: scale(.85, .85);
+    }
+  }
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
