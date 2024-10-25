@@ -60,8 +60,7 @@ body {
         align-self: flex-end;
     }
 }
- /* Styling for the popup box */
-/* Styling for the popup button */
+
 .popup-button {
     display: inline-block;
     
@@ -141,12 +140,12 @@ body {
         flex-direction: column;
         overflow-x: hidden;
         overflow-y: auto;
-        max-height: 400px; /* Optional: Limit height to avoid too much scrolling */
-        align-items: center; /* Center the items */
+        max-height: 400px; 
+        align-items: center; 
     }
 
     .course-item {
-        min-width: 80%; /* Make the course items take up more space */
+        min-width: 80%; 
     }
     .offer-section {
         height: 80vh;
@@ -328,63 +327,63 @@ small{
 
 
 .form-section {
-    display: grid; /* Use grid layout */
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    align-items: center; /* Center align items */
-    padding: 20px; /* Padding around the section */
-    background-color: #f9f9f9; /* Light background for contrast */
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    align-items: center;
+    padding: 20px; 
+    background-color: #f9f9f9; 
     margin-bottom: 50px;
 }
 
 .form-container {
-    padding: 20px; /* Padding inside the form container */
+    padding: 20px; 
 }
 
 .form-container h2 {
-    margin-bottom: 20px; /* Space below the heading */
+    margin-bottom: 20px; 
 }
 
 label {
-    display: block; /* Block display for labels */
-    margin-bottom: 5px; /* Space below labels */
+    display: block; 
+    margin-bottom: 5px; 
 }
 
 input, textarea {
-    width: 100%; /* Full width inputs */
-    padding: 10px; /* Padding inside inputs */
-    margin-bottom: 15px; /* Space below inputs */
-    border: 1px solid #ccc; /* Light border */
-    border-radius: 5px; /* Rounded corners */
+    width: 100%;
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
 }
 
 button {
-    padding: 10px 15px; /* Padding inside button */
-    background-color: #af2db5; /* Button color */
-    color: white; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px 15px; 
+    background-color: #af2db5; 
+    color: white;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
 }
 
 button:hover {
-    background-color: #603472; /* Darker blue on hover */
+    background-color: #603472; 
 }
 
 .image-container {
-    display: flex; /* Flex layout for image */
-    justify-content: center; /* Center the image */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
 .form-image {
-    max-width: 100%; /* Responsive image */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto; 
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .form-section {
-        grid-template-columns: 1fr; /* Stack columns on small screens */
+        grid-template-columns: 1fr; 
     }
 
 }
@@ -402,10 +401,10 @@ button:hover {
     background-color: #af2db5;
     border: none;
     border-radius: 4px;
-    text-decoration: none; /* Remove underline from anchor tag */
+    text-decoration: none; 
     transition: background-color 0.3s ease;
 }
 
 .button-link:hover {
-    background-color: #603472; /* Darker blue on hover */
+    background-color: #603472; 
 }
